@@ -1,0 +1,143 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+@media only screen and (max-width: 1200px) {
+  .swiper-slide {
+    width: 100%;
+  }
+}
+
+/*  swiper-button */
+/*  swiper-button */
+/*  swiper-button */
+/*  swiper-button */
+/*  swiper-button */
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 12;
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  color: #fff;
+}
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next.swiper-button-hidden {
+  opacity: 0;
+  cursor: auto;
+  pointer-events: none;
+}
+.swiper-navigation-disabled .swiper-button-prev,
+.swiper-navigation-disabled .swiper-button-next {
+  display: none !important;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 25%;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 25%;
+  left: auto;
+}
+.swiper-button-lock {
+  display: none;
+}
+/* Navigation font start */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 20px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "🡠";
+}
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 25%;
+  left: auto;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "🡢";
+}
+/* Navigation font end */
+
+/* Square Navigation button */
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  border-radius: 0% !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #b9ff66;
+}
+
+/* Triangle after review */
+
+.review-box::before {
+  content: " ";
+  position: absolute;
+  left: 40px;
+  bottom: -40px;
+
+  width: 40px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  background-color: #b9ff66;
+  z-index: 1;
+}
+
+.review-box::after {
+  z-index: 2;
+  content: " ";
+  position: absolute;
+  left: 41px;
+  bottom: -37px;
+
+  width: 38px;
+  aspect-ratio: 1;
+  clip-path: polygon(0 0, 50% 50%, 100% 0);
+  background-color: #000;
+}

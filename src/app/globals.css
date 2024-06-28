@@ -2,32 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* FAQ section */
+.transition-faq {
+  transition-property: opacity, transform; /* Specify which properties to animate */
+  transition-duration: 0.5s; /* Set the duration of the transition */
+  opacity: 0; /* Initially hide the element */
+  transform: translateX(100%); /* Initially move the element off-screen */
+  height: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.transition-faq.transition-faq-active {
+  opacity: 1; /* Show the element when it has the 'block' class */
+  transform: translateX(0); /* Move the element back to its original position */
+  height: auto;
 }
