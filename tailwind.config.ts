@@ -1,10 +1,9 @@
-import { Config } from "tailwindcss";
+import type { Config } from "tailwindcss";
 import plugin from "tailwindcss/plugin";
-import tailwindcssAnimate from "tailwindcss-animate";
 
-const config: Config = {
+const config = {
   darkMode: ["class"],
-  content: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}", "./app/**/*.{js,jsx}", "./src/**/*.{js,jsx}"],
+  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
     extend: {
@@ -38,7 +37,7 @@ const config: Config = {
     container: false,
   },
   plugins: [
-    tailwindcssAnimate,
+    require("tailwindcss-animate"),
     plugin(function ({ addComponents }) {
       addComponents({
         ".container": {
@@ -65,6 +64,6 @@ const config: Config = {
       });
     }),
   ],
-};
+} satisfies Config;
 
 export default config;

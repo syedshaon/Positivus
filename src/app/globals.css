@@ -16,3 +16,20 @@
   transform: translateX(0); /* Move the element back to its original position */
   height: auto;
 }
+
+/* Radio button in Contact form */
+button[role="radio"] {
+  background-color: #f0f0f0;
+  border: 1px solid #141414;
+
+  cursor: pointer;
+}
+
+button[role="radio"]:hover {
+  background-color: #b9ff66;
+}
+
+button[role="radio"][aria-checked="true"] {
+  background-color: #fff;
+  color: #b9ff66;
+}
