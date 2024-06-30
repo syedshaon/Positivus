@@ -59,7 +59,7 @@ const Contact = () => {
     <div className="container my-20">
       <div className="header lg:flex text-center items-center gap-5 mb-10">
         <h3 className="text-3xl p-1 font-bold m-0 inline-block lg:block self-center bg-csGreen rounded-md">Contact Us</h3>
-        <p className="max-w-[600px] lg:text-left lg:mr-auto">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+        <p className="max-w-[600px] lg:text-left lg:mr-auto">Connect with Us: Lets Discuss Your Digital Marketing Needs</p>
       </div>
       <div className="flex justify-between items-center p-5 py-10 lg:pr-0 bg-csLGray min-h-[400px] rounded-2xl">
         <div className="form h-full w-full lg:w-3/4">
@@ -129,7 +129,7 @@ const Contact = () => {
                   </FormItem>
                 )}
               />
-              <Button classes="!w-full" text="Submit" />
+              <Button label="Submit" classes="!w-full" text="Submit" />
             </form>
           </Form>
         </div>

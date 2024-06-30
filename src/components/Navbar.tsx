@@ -46,8 +46,9 @@ const Navbar = () => {
       {isOpen && (
         <div className=" lg:hidden bg-black text-white fixed top-0 left-0 w-screen h-screen flex justify-center items-center flex-col">
           <div className="lg:hidden absolute   top-5    right-12">
-            <button onClick={toggleMenu} className="text-white focus:outline-none">
+            <button aria-label="mobile menu" onClick={toggleMenu} className="text-white focus:outline-none">
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+              <span className="sr-only">Menu Button</span>
             </button>
           </div>
 

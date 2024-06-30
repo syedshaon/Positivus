@@ -8,7 +8,7 @@ const Happen = () => {
       <div className="bg-csLGray p-10 rounded-2xl">
         <h3 className="font-bold text-xl mb-5">Lets make things happen</h3>
         <p className="mb-5  max-w-[500px]">Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.</p>
-        <Button text="Get your free proposal" />
+        <Button label="Get your free proposal" classes="" text="Get your free proposal" />
       </div>
 
       <Image

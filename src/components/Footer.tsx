@@ -33,17 +33,17 @@ const Footer = () => {
           <div className="social text-black">
             <ul className="flex items-center gap-3">
               <li>
-                <a className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
+                <a aria-label="Facebook" className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
                   <FaFacebookF className="text-black  text-sm  " />
                 </a>
               </li>
               <li>
-                <a className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
+                <a aria-label="Twitter" className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
                   <FaTwitter className="text-black  text-sm    " />
                 </a>
               </li>
               <li>
-                <a className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
+                <a aria-label="Linkedin" className=" flex justify-center items-center w-[20px] h-[20px] bg-white rounded-full " href="#">
                   <FaLinkedinIn className="text-black   text-sm   " />
                 </a>
               </li>

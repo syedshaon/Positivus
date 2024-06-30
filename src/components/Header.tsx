@@ -12,9 +12,9 @@ const Header = () => {
       <div className="w-full    lg:col-start-1 lg:col-end-2 lg:row-start-2 row-start-3 row-end-4 lg:max-w-[400px]  mr-auto flex  flex-col  items-center lg:items-start  text-center lg:text-left ">
         <p className="mb-5">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
 
-        <Button text="Book a consulation" />
+        <Button label="Book a consulation" classes="" text="Book a consulation" />
       </div>
-      <Image className=" h-[200px] max-h-[300px] w-auto lg:h-auto lg:col-start-2 lg:col-end-3 row-start-2 row-end-3 lg:row-start-1 lg:row-end-4" src="/mike.png" alt="announce" height={601} width={515} />
+      <Image priority className=" h-[200px] max-h-[300px] w-auto lg:h-auto lg:col-start-2 lg:col-end-3 row-start-2 row-end-3 lg:row-start-1 lg:row-end-4" src="/mike.png" alt="announce" height={601} width={515} />
     </div>
   );
 };

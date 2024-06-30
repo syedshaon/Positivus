@@ -18,7 +18,7 @@ const Teams = () => {
         <People name="Sarah Kim" title="Content Creator" img="/people6.png" linkedin="#" desc="10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy" />
       </div>
       <div className="flex w-[95%] lg:w-full mx-auto my-5 justify-end">
-        <Button classes="" text="All Team Members" />
+        <Button label="Find All Team Members" classes="" text="All Team Members" />
       </div>
     </div>
   );
