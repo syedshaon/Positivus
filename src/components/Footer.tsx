@@ -58,7 +58,7 @@ const Footer = () => {
             <p className="my-2 text-xs">Phone: 555-567-8901</p>
             <p className="text-xs">Address: 1234 Main St Moonstone City, Stardust State 12345</p>
           </div>
-          <div className="mt-8 lg:mt-0  w-full lg:w-1/2 bg-gray-700 p-7 rounded-md flex  flex-col  lg:flex-row   gap-4 justify-evenly">
+          <div className="mt-8 lg:mt-0  w-full lg:w-1/2 bg-gray-700 p-7 rounded-md flex  flex-col  xl:flex-row   gap-4 justify-evenly">
             <input className="  bg-transparent rounded-xl py-2 px-5 border border-white placeholder:text-white " type="email" name="subEmail" id="subEmail" placeholder="Email" />
             <button className="w-full lg:w-auto bg-csGreen mt-3 lg:mt-0 text-black rounded-xl py-2 px-5  hover:bg-white border-transparent hover:border-black border-2 hover:text-black duration-300 transition-all ">Subscribe to News</button>
           </div>
