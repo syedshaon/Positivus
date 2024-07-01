@@ -14,7 +14,7 @@ const Header = () => {
 
         <Button label="Book a consulation" classes="" text="Book a consulation" />
       </div>
-      <Image priority className=" h-[200px] max-h-[300px] w-auto lg:h-auto lg:col-start-2 lg:col-end-3 row-start-2 row-end-3 lg:row-start-1 lg:row-end-4" src="/mike.png" alt="announce" height={601} width={515} />
+      <Image priority className=" h-[150px] md:h-[200px] max-h-[300px] w-auto lg:h-auto lg:col-start-2 lg:col-end-3 row-start-2 row-end-3 lg:row-start-1 lg:row-end-4" src="/mike.png" alt="announce" height={601} width={515} />
     </div>
   );
 };
